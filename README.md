@@ -1,5 +1,5 @@
 # Geolocation, Notification, Media
-[[Github Pages](https://igor-chazov.github.io/ahj-hw-media-timeline)]
+[![Build status](https://ci.appveyor.com/api/projects/status/1meuebg28753m5vu?svg=true)](https://ci.appveyor.com/project/igor-chazov/ahj-hw-media-timeline) [[Github Pages](https://igor-chazov.github.io/ahj-hw-media-timeline)]
 
 ---
 
