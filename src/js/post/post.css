@@ -1,0 +1,90 @@
+.timeline__post {
+  margin-bottom: 1rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  padding: 0.8rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+}
+
+.timeline__post::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -72px;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 1px solid var(--color-gray);
+  border-radius: 50%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.post__body {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.post__text {
+  width: 78%;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.post__date {
+  width: 22%;
+  text-align: end;
+}
+
+.post__audio {
+  width: 78%;
+  padding-top: 1rem;
+}
+
+.post__audio audio {
+  width: 100%;
+}
+
+.post__video {
+  max-width: 78%;
+  padding-top: 1rem;
+}
+
+.post__body video {
+  max-width: 100%;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__coords {
+  position: relative;
+  color: var(--color-green);
+}
+
+.post__date {
+  color: var(--color-red);
+}
+
+.post__coords:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  display: block;
+  width: 20px;
+  height: 100%;
+  transform: translateX(100%);
+  background-image: url("../../img/geolocation.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

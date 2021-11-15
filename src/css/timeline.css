@@ -1,0 +1,107 @@
+:root {
+  --color-green: #4caf50;
+  --color-red: #ff0000;
+  --color-gray: #a1a1a1;
+  --color-gray-active: #858585;
+}
+
+.timeline {
+  padding-top: 2rem;
+  padding-bottom: 115px;
+}
+
+.timeline__container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline__body-controls {
+  width: 5rem;
+  background-color: white;
+  border: 1px solid var(--color-gray);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: 2rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.timeline__footer {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 768px;
+  transform: translateX(-50%);
+}
+
+.footer__container {
+  padding: 0 0 1rem 0;
+}
+
+.user-panel__video-wrap {
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.user-panel__video {
+  width: 100%;
+}
+
+.user-panel__control {
+  position: relative;
+}
+
+.user-panel__input-wrap {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.user-panel__input {
+  width: 100%;
+  border: 1px solid var(--color-gray);
+  resize: none;
+  outline: none;
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.5rem 140px 0.5rem 1rem;
+  position: relative;
+  transition: box-shadow 0.3s ease-out, outline 0.3s ease-out;
+}
+
+.user-panel__input:hover {
+  box-shadow: inset 0 0 5px 0 var(--color-gray-active);
+}
+
+.user-panel__input:focus {
+  box-shadow: inset 0 0 5px 0 var(--color-gray-active);
+  outline: 1px solid var(--color-gray);
+  outline-offset: -2px;
+}
+
+.form-media__start,
+.form-media__stop {
+  position: absolute;
+  top: 25px;
+  right: 1.5rem;
+}
+
+.form-media__stop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-media__btn-audio {
+  margin-right: 0.8rem;
+}
+
+.form-media__duration {
+  display: flex;
+  align-items: center;
+  width: 3.5rem;
+  padding-left: 0.4rem;
+}

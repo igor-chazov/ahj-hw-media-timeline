@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../font/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+  background-image: url("../img/list_1200x720.png");
+  background-repeat: repeat;
+  font-family: "MontserratRegular", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+}
+
+h2 span {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.container {
+  max-width: 800px;
+  padding: 0 0.8rem;
+  margin: 0 auto;
+}
